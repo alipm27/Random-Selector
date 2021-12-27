@@ -9,9 +9,14 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.randomselector.R;
+import com.example.randomselector.databinding.FragmentCategoryBinding;
+import com.example.randomselector.databinding.FragmentHomeBinding;
 
 public class HomeFragment extends Fragment {
-
+FragmentHomeBinding binding;
+    /*
+     behtare az binding estefade konim
+      */
     public HomeFragment() {
         // Required empty public constructor
     }
@@ -19,9 +24,10 @@ public class HomeFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        binding=FragmentHomeBinding.inflate(getLayoutInflater());
         // Inflate the layout for this fragment
-        View view=inflater.inflate(R.layout.fragment_home, container, false);
 
-        return view;
+
+        return binding.getRoot();
     }
 }

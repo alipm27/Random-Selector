@@ -26,10 +26,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding=ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-
+/*
+baraye inke home aval ejra beshe bayad jaye home va categiry avaz beshe
+ */
         List<Fragment> fragments=new ArrayList<>();
-        fragments.add(new CategoryFragment());
         fragments.add(new HomeFragment());
+        fragments.add(new CategoryFragment());
 
         binding.pager.setAdapter(new TabsAdapter(MainActivity.this,fragments));
 
@@ -40,11 +42,11 @@ public class MainActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()){
                     case R.id.item_category:
-                        binding.pager.setCurrentItem(0);
+                        binding.pager.setCurrentItem(1);
                         binding.bottomTabs.getMenu().findItem(R.id.item_category).setChecked(true);
                         break;
                     case R.id.item_home:
-                        binding.pager.setCurrentItem(1);
+                        binding.pager.setCurrentItem(0);
                         binding.bottomTabs.getMenu().findItem(R.id.item_home).setChecked(true);
                         break;
                 }
@@ -62,10 +64,10 @@ public class MainActivity extends AppCompatActivity {
             public void onPageSelected(int position) {
                 super.onPageSelected(position);
                 switch (position){
-                    case 0:
+                    case 1:
                         binding.bottomTabs.getMenu().findItem(R.id.item_category).setChecked(true);
                         break;
-                    case 1:
+                    case 0:
                         binding.bottomTabs.getMenu().findItem(R.id.item_home).setChecked(true);
                         break;
                 }
