@@ -9,11 +9,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.randomselector.MainActivity;
-import com.example.randomselector.activities.AddCategory;
+import com.example.randomselector.activities.AddCategoryActivity;
 import com.example.randomselector.databinding.FragmentCategoryBinding;
-
-import java.util.Objects;
 
 public class CategoryFragment extends Fragment {
     /*
@@ -31,17 +28,17 @@ public class CategoryFragment extends Fragment {
         // Inflate the layout for this fragment
         binding=FragmentCategoryBinding.inflate(getLayoutInflater());
 
-        /*binding.imgAddCategory.setOnClickListener(new View.OnClickListener() {
+        binding.imgAddCategory.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getContext(), AddCategory.class);
-                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                Intent intent=new Intent(getContext(), AddCategoryActivity.class);
+                /*intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);*/
                 startActivity(intent);
 
 
             }
-        });*/
+        });
 
         return binding.getRoot();
     }
