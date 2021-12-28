@@ -4,4 +4,6 @@
     <string name="category">Category</string>
     <string name="random_selector">Random Selector</string>
     <string name="home">Home</string>
+    <string name="add">Add</string>
+    <string name="add_category">Add Category</string>
 </resources>
