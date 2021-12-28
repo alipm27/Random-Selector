@@ -6,26 +6,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".MainActivity">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <androidx.appcompat.widget.AppCompatTextView
-                android:textColor="@color/black"
-                android:text="@string/random_selector"
-                android:layout_centerInParent="true"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-        </RelativeLayout>
-    </androidx.appcompat.widget.Toolbar>
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:id="@+id/toolbar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+<!--            <androidx.appcompat.widget.AppCompatTextView-->
+<!--                android:textColor="@color/black"-->
+<!--                android:text="@string/random_selector"-->
+<!--                android:layout_centerInParent="true"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"/>-->
+<!--        </RelativeLayout>-->
+<!--    </androidx.appcompat.widget.Toolbar>-->
 
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/pager"
-        android:layout_below="@id/toolbar"
+
         android:layout_above="@id/bottom_tabs"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -34,7 +34,7 @@
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_tabs"
-        app:menu="@menu/bottom_tabs"
+        app:menu="@menu/bottom_menu"
         android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
