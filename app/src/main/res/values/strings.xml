@@ -1,9 +1,7 @@
 <resources>
     <string name="app_name">Random Selector</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="category">Category</string>
-    <string name="random_select">Random Select</string>
     <string name="random_selector">Random Selector</string>
     <string name="home">Home</string>
 </resources>
